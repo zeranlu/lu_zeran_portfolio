@@ -1,0 +1,5 @@
+@use '../abstracts';
+
+span {
+    color: abstracts.$accent-color;
+}
