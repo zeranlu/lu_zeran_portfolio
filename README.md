@@ -1,31 +1,35 @@
-# Project Name
+# Welcome to my portfolio!
 
-TODO: Write a project description
+This is my portfolio to show off my skills as a front-end developper. Shoot me a message or email if you are interested in creating a project together.
 
-## Installation
+![Personal Logo](images/gen-logo/port-logo.svg)
 
-TODO: Describe the installation process
+## Experience
+
+I am a graduate from Fanshawe College's Interactive Media and Design (IDP) program.
+
+I have experience using: various coding languages like HTML, CSS, JS, PHP, etc.
 
 ## Usage
 
-TODO: Write usage instructions
+Fork the repo to find my contact and resume!
 
-## Contributing
+You can also find links to all my socials in my portfolio as well!
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+![facebook logo](images/social-media-logo/facebook.svg)![instagram logo](images/social-media-logo/instagram.svg)![pinterest logo](images/social-media-logo/pinterest.svg)![LinkedIn logo](images/social-media-logo/linkedin.svg)
+
+## Hobbies and Interests
+
+I love horror movies, collecting comic books, and practising muay thai. I'm also a big fight fan as well and have been watching MMA for about 8 years.
 
 ## History
 
-TODO: Write history
+This is the first iteration of my portfolio. I will be making future updates to this depending on my career paths, project archives, and future hobbies.
 
 ## Credits
 
-TODO: Write credits
+Portfolio created by Zeran Lu.
 
 ## License
 
-TODO: Write license
+MIT
