@@ -1,4 +1,38 @@
 @use '../abstracts';
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: abstracts.$secondary-color;
+}
+
+.btn {
+    background-color: abstracts.$secondary-color;
+    color: abstracts.$accent-color;
+    border: 1px solid abstracts.$accent-color;
+    border-radius: 20px;
+    padding: clamp(15px, 20px, 25px);
+    cursor: pointer;
+    box-shadow: 4px 4px 0px abstracts.$accent-color;
+}
+
+.btn:hover {
+    background-color: abstracts.$accent-color;
+    transition: 0.5s ease;
+    color: abstracts.$primary-color;
+}
+
+.btn:active {
+    background-color: abstracts.$secondary-color;
+    color: abstracts.$accent-color;
+    box-shadow: 0 0 0;
+}
+
+.text-con {
+    background-color: abstracts.$primary-color;
+    padding: clamp(5px, 10px, 15px)
+}
 
 span {
     color: abstracts.$accent-color;
