@@ -1,5 +1,5 @@
 @mixin borderRad($radius) {
-    border-radius: $radius 0 $radius 0;
+    border-radius: $radius 20px $radius 20px;
 }
 
 @mixin flex-center {
