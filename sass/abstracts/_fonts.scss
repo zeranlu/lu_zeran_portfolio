@@ -1,6 +1,14 @@
 @font-face {
-    font-family: 'LouisGeorgeCafe';
-    src: url('../../fonts/LouisGeorgeCafe.woff2') format('woff2'),
+    font-family: 'cherry';
+    src: url('../../fonts/cherry-font.woff2') format('woff2'),
+        url('../../fonts/cherry-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lgc';
+    src: url('../../fonts/LouisGeorgeCafe.woff2') format('woff2'), 
         url('../../fonts/LouisGeorgeCafe.woff') format('woff');
     font-weight: normal;
     font-style: normal;
