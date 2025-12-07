@@ -1,59 +1,250 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
         <title>Zeran Lu's Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link type="text/css" href="./css/main.css" rel="stylesheet">
         <link type="text/css" href="./css/grid.css" rel="styelsheet">
     </head>
 
 <body>
-    <h1 class="hidden">Zeran Lu's Portfolio</h1>
-<!-- HEADER -->
+<header class="grid-con">
+    
+    <button id="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#C59898"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
+    </button>
 
-    <header class="grid-con">
-        <div class="logo">
-            <a href="index.html">
-                ADD A LOGO HERE
-            </a>
-        </div>
+    <div class="overylay" id="menu">
+
+        <button id="close">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="48px" fill="#C59898"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </button>
+
         <nav>
             <ul>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Case Studies</a></li>
+                <li><a href="index.html"><img src="images/gen-logo/port-logo.svg" alt="logo"></a></li>
+                <li><a href="#about"><span>01.</span>About</a></li>
+                <li><a href="#projects"><span>02.</span>Projects</a></li>
+                <li><a href="#skills"><span>03.</span>Skills</a></li>
+                <li><a href="#reel"><span>04.</span>Reel</a></li>
+                <li><a href="#contact"><span>05.</span>Contact</a></li>
+                <li><button>Resume</button></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
 <!-- MAIN -->
 
 <main>
+    <h1 class="hidden">Zeran Lu's Portfolio</h1>
 
-    <section class="grid-con">
-        <h2 class="hidden">Introduction Section</h2>
-        <p>My name is Zeran Lu</p>
-        <p>Welcome to my Portfolio</p>
+    <section class="grid-con" id="intro">
+        <h2 class="hidden">Introduction</h2>
+        <img src="#" alt="picture of me">
+        <h2>Hi My name is Zeran Lu. Front-end Dev.</h2>
+        <button>Hire Me</button>
     </section>
-    
-    <section class="grid-con">
-        <h2 class="hidden">Projects Section</h2>
+
+    <section class="grid-con" id="about">
+        <h2><span>01.</span>About Me</h2>
+        <img src="#" alt="picture of me">
+        <div class="text-con">
+            <p>I am a front-end developer that is passionate about creating creatively interactive websites that push the boundaries of what's possible. I am a graduate at Fanshawe college under the Interactive Design and Media program (IDP). I have many different personal and school projects on my portfolio that reflect my various hobbies to show off my design and coding capabilities.</p>
+        </div>
+    </section>
+
+    <section class="grid-con" id="projects">
+        <h2><span>02.</span>Some Projects I've Built</h2>
+
+        <div class="project-con" id="proj-1">
+            <h4>Featured Project</h4>            
+            <h3>VELOCITY Earbuds</h3>
+            <img src="#" alt="picture of the VELOCITY Earbud website">
+            <div class="text-con">
+                <p>This project consists is a model promotional website for some custom made 3D earbuds that I researched, designed, modeled, and created a website for. The assets for the website were all also custom created including the logo, promotional images, graphic icons, 3D models, and HTML, CSS and JS code.</p>
+            </div>
+            <p>Cinema4d - Redshift | VSCode | Photoshop | Illustrator | GitHub</p>
+            <div class="link-con">
+                <a href="#"><img src="images/software-logo/github-mark-white.svg"></a>
+
+                <a href="#"><img src="images/gen-logo/new-link.svg"></a>
+            </div>
+        </div>
+
+
+        <div class="project-con" id="proj-2">
+            <h4>Featured Project</h4>            
+            <h3>Comic Book Store</h3>
+            <img src="#" alt="picture of the comic book store website">
+            <div class="text-con">
+                <p>This project was our introduction to back-end development. I have turned this project into a personal comic book collection gallery. Website acts as the collector's best friend, being able to digitize, preserve, and show-off one's collection.</p>
+            </div>
+            <p>Cinema4d - Redshift | VSCode | Photoshop | Illustrator | GitHub</p>
+            <div class="link-con">
+                <a href="#"><img src="images/software-logo/github-mark-white.svg"></a>
+
+                <a href="#"><img src="images/gen-logo/new-link.svg"></a>
+            </div>
+        </div>
+
+
+        <div class="project-con" id="proj-3">
+            <h4>Featured Project</h4>            
+            <h3>Seven Makeup Line</h3>
+            <img src="#" alt="picture of the Seven makeup website">
+            <div class="text-con">
+                <p>This project was a collection of visual assets created by me and Ben Kettlewell. This website is an advertisement to show off the strong brand identity we created with various visual assets created from Adobe software and Figma.</p>
+            </div>
+            <p>Cinema4d - Redshift | VSCode | Photoshop | Illustrator | GitHub</p>
+            <div class="link-con">
+                <a href="#"><img src="images/software-logo/github-mark-white.svg"></a>
+
+                <a href="#"><img src="images/gen-logo/new-link.svg"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-con" id="skills">
+        <h2><span>03.</span>Creative Toolkit</h2>
+
+        <div class="icon-con" id="icon-row-1">
+
+        </div>
+        <p>VSCode | HTML | CSS | JavaScript | MySQL</p>
+        <h4>Coding Languages</h4>
+
+
+        <div class="icon-con" id="icon-row-2">
+
+        </div>
+        <p>PHP | Gtihub | Figma | Cinema4D | Redshift</p>
+        <h4>Asset Management</h4>
+
+        <div class="icon-con" id="icon-row-3">
+
+        </div>
+        <p>Photoshot | Illustrator | AfterEffects</p>
+        <h4>Adobe Software</h4>
+    </section>
+
+    <section class="grid-con" id="reel">
+        <h2><span>04.</span>Demo Reel</h2>
+
+        <div class="video-player-con">
+
+            <div class="video-con">
+
+
+
+            </div>
+
+        </div>
+
+        <div class="col-span-full">
+            <h3>Video Content Highlights</h3>
+            <div class="link-con">
+                <a href="#"><img src="images/software-logo/github-mark-white.svg"></a>
+
+                <a href="#"><img src="images/gen-logo/new-link.svg"></a>
+            </div>
+        </div>
+        
+        <div class="vid-sum-con" id="sum-1">
+            <h4>Website</h4>
+            <h3>UFC vs ONE Fight Night</h3>
+            <div class="text-con">
+                <p>A website about a potential crossover of fighting organizations.</p>
+            </div>
+        </div>
+
+        <div class="vid-sum-con" id="sum-2">
+            <h4>Website</h4>
+            <h3>Interactive Chessboard</h3>
+            <div class="text-con">
+                <p>An interactive web player to enhance the experience of online chess.</p>
+            </div>
+        </div>
+
+        <div class="vid-sum-con" id="sum-3">
+            <h4>Website</h4>
+            <h3>Horror Movie Selector</h3>
+            <div class="text-con">
+                <p>Help you and you spooky viewing party pick a horror movie at incredible speed.</p>
+            </div>
+        </div>
+
+        <div class="vid-sum-con" id="sum-4">
+            <h4>3-D Model</h4>
+            <h3>Comic Book Case</h3>
+            <div class="text-con">
+                <p>A rendered 3D model of a comic book collecting case.</p>
+            </div>
+        </div>
+
+        <div class="vid-sum-con" id="sum-5">
+            <h4>Graphics</h4>
+            <h3>Movie Poster Touchups</h3>
+            <div class="text-con">
+                <p>Famous horror movie redesigns and touchups in different styles and renditions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-con" id="contact">
+        <h2><span>05.</span>Contact Me</h2>
+
+        <div id="greeting-con">
+            <div class="text-con">
+                <p>Thank you for taking the time to visit my portfolio. I would love to engage in future projects with you.</p>
+            </div>
+
+            <img src="#" alt="picture of greeting graphic">
+
+            <div class="text-con">
+                <p>To see more of my work, refer to my projects archives here: www.github.com/zeranlu</p>
+            </div>
+        </div>
     </section>
 
 </main>
 
 <!-- FOOTER -->
 
-<footer>
-    <div class="logo">
-        <a>
-            ADD LOGO HERE
-        </a>
+<footer class="full-width-grid-con" id="footer">
+    <h2 class="hidden">Footer Section</h2>
+    <img src="images/gen-logo/port-logo.svg">
+    <div class="soc-con">
+        <a href="#"><img src="images/social-media-logo/facebook.svg" alt="facebook logo"></a>
+
+        <a href="#"><img src="images/social-media-logo/instagram.svg" alt="instagram logo"></a>
+
+        <a href="#"><img src="images/social-media-logo/pinterest.svg" alt="pinterest logo"></a>
+
+        <a href="#"><img src="images/social-media-logo/linkedin.svg" alt="linkedIn logo"></a>
     </div>
+    <p>Copyright © Zeran Lu 2025. All rights reserved.</p>
+
 </footer>
 
-<script src="./js/main.js"></script>
-</body>
 
+
+    <!-- link to greensock main library -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <!-- link to greensock galleryAnimation -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- link to greensock scrollTrigger -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <!-- ScrollTo plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <!-- Our JS folder last -->
+    <script src="./js/main.js"></script>
+
+
+
+</body>
 </html>
