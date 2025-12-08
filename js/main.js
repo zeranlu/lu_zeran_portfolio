@@ -120,39 +120,58 @@ player.addEventListener("mouseleave", hideControls);
 
 // IMAGE GALLERY --------------------------------------------
 
+
 const images = [
     {
-        small:"",
-        large:""
+        small:"images/gallery-images/s-gallery-image-353X271-1.png",
+        large:"images/gallery-images/l-gallery-image-690X530-1.png"
     },
     
     {
-        small:"",
-        large:""
+        small:"images/gallery-images/s-gallery-image-353X271-2.png",
+        large:"images/gallery-images/l-gallery-image-690X530-2.png"
     },
 
     {
-        small:"",
-        large:""
+        small:"images/gallery-images/s-gallery-image-353X271-3.png",
+        large:"images/gallery-images/l-gallery-image-690X530-3.png"
     },
 
     {
-        small:"",
-        large:""
+        small:"images/gallery-images/s-gallery-image-353X271-4.png",
+        large:"images/gallery-images/l-gallery-image-690X530-4.png"
     },
 
     {
-        small:"",
-        large:""
+        small:"images/gallery-images/s-gallery-image-353X271-5.png",
+        large:"images/gallery-images/l-gallery-image-690X530-5.png"
     }
 ];
 
+// const images = [
+//     "images/gallery-images/l-gallery-image-690X530-1.png",
+//     "images/gallery-images/l-gallery-image-690X530-2.png",
+//     "images/gallery-images/l-gallery-image-690X530-3.png",
+//     "images/gallery-images/l-gallery-image-690X530-4.png",
+//     "images/gallery-images/l-gallery-image-690X530-5.png"
+// ]
+
+
+
 let imageIndex = 0;
 const galleryImage = document.querySelector(".gallery-image");
-const prevButton = document.querySelector(".previous-button");
-const nextButton = document.querySelector(".next-button");
+const prevButton = document.querySelector("#previous-button");
+const nextButton = document.querySelector("#next-button");
 
-galleryImage.src = images[imageIndex];
+function getImagePath(imageSelection) {
+    if (window.innerWidth <= 768) {
+        return imageSelection.small;
+    } else {
+        return imageSelection.large;
+    }
+}
+
+galleryImage.src = getImagePath(images[imageIndex]);
 
 function animateSlide(newIndex, direction) {
     const offset = direction * 100;
@@ -163,7 +182,7 @@ function animateSlide(newIndex, direction) {
         duration: 0.5,
         onComplete: () => {
             imageIndex = newIndex;
-            galleryImage.src = images[imageIndex];
+            galleryImage.src = getImagePath(images[imageIndex]);
             galleryImage.style.transform = `translateX(${offset}%)`;
 
             gsap.to(galleryImage, {
@@ -174,6 +193,10 @@ function animateSlide(newIndex, direction) {
         }
     });
 };
+
+window.addEventListener("resize", () => {
+    galleryImage.src = getImagePath(images[imageIndex]);
+});
 
 nextButton.addEventListener("click", () => {
     let newIndex = imageIndex + 1;
