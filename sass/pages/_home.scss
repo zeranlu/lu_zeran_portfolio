@@ -26,12 +26,14 @@ body {
     background-color: abstracts.$accent-color;
     transition: 0.5s ease;
     color: abstracts.$primary-color;
+    scale: (110%);
 }
 
 .btn:active {
     background-color: abstracts.$secondary-color;
     color: abstracts.$accent-color;
     box-shadow: 0 0 0;
+    scale: (90%);
 }
 
 .text-con {
