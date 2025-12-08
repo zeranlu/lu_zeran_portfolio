@@ -44,17 +44,17 @@
     
     <section class="grid-con" id="intro">
         <h2 class="hidden">Introduction</h2>
-        <img class="col-span-full m-col-start-7 m-col-span-6 l-col-start-7 l-col-span-6" src="#" alt="picture of me">
-        <h2 class="col-span-full m-col-start-1 m-col-span-6 l-col-start-1 l-col-span-6">Hi<br>My name is Zeran Lu. Front-end Dev.</h2>
-        <button class="btn col-span-full m-col-start-1 m-col-span-5 l-colstart-1" id="hire-me">Hire Me</button>
+        <img class="col-span-full m-col-start-7 m-col-span-6" src="#" alt="picture of me">
+        <h2 class="col-span-full m-col-start-1 m-col-span-6">Hi<br>My name is Zeran Lu. Front-end Dev.</h2>
+        <button class="btn col-start-2 col-span-2 m-col-start-1 m-col-span-5" id="hire-me">Hire Me</button>
     </section>
 
 <!-- ABOUT SECTION -->
 
     <section class="grid-con" id="about">
-        <h2 class="col-span-full m-col-end-12 l-col-end-12"><span>01.</span>About Me</h2>
-        <img class="col-span-full m-col-start-2 m-col-span-5 l-col-start-2 l-col-span-5" src="#" alt="picture of me">
-        <div class="text-con col-start-1 col-span-3 m-col-start-6 m-col-span-6  l-col-start-6 l-col-span-6">
+        <h2 class="col-span-full m-col-end-12"><span>01.</span>About Me</h2>
+        <img class="col-span-full m-col-start-2 m-col-span-5" src="#" alt="picture of me">
+        <div class="text-con col-start-1 col-span-3 m-col-start-6 m-col-span-6">
             <p>I am a front-end developer that is passionate about creating creatively interactive websites that push the boundaries of what's possible. I am a graduate at Fanshawe college under the Interactive Design and Media program (IDP). I have many different personal and school projects on my portfolio that reflect my various hobbies to show off my design and coding capabilities.</p>
         </div>
     </section>
@@ -199,38 +199,34 @@
 <!-- CONTACT SECTION -->
 
     <section class="grid-con" id="contact">
-        <h2><span>05.</span>Contact Me</h2>
+        <h2 class="center-align col-span-full"><span>05.</span>Contact Me</h2>
 
-        <div id="greeting-con">
-            <div class="text-con">
+            <div class="text-con col-span-full m-col-start-2 m-col-span-4">
                 <p>Thank you for taking the time to visit my portfolio. I would love to engage in future projects with you.</p>
             </div>
 
-            <img src="#" alt="picture of greeting graphic">
+            <img class="center-align col-span-full m-col-start-5 m-col-span-4" src="#" alt="picture of greeting graphic">
 
-            <div class="text-con">
+            <div class="text-con col-span-full m-col-start-8 m-col-span-4">
                 <p>To see more of my work, refer to my projects archives here: www.github.com/zeranlu</p>
             </div>
-        </div>
 
-        <form id="contact-form">
+            <label class="left-align col-span-full m-col-start-2" for="fname">Enter your name here</label>
+            <input class="col-span-full m-col-start-2 m-col-end-12" type="text" id="fname" placeholder="What's your name?">
 
-            <label for="fname">What's your name?</label>
-            <input type="text" id="fname">
+            <label class="left-align col-span-full m-col-start-2" for="lname">Enter your preferred name here</label>
+            <input class="col-span-full m-col-start-2 m-col-end-12" type="text" id="lname" placeholder="What should I call you?">
 
-            <label for="lname">What should I call you?</label>
-            <input type="text" id="lname">
-
-            <label for="email">What's your e-mail?</label>
-            <input type="email" id="email">
+            <label class="left-align col-span-full m-col-start-2" for="email">Enter your email here</label>
+            <input class="col-span-full m-col-start-2 m-col-end-12" type="email" id="email" placeholder="What's your e-mail?">
             
-            <label for="comments">Let's get down to business...</label>
-            <textarea id="comments"></textarea>
+            <label class="left-align col-span-full m-col-start-2" for="message">Enter your message here</label>
+            <textarea class="col-span-full m-col-start-2 m-col-end-12" id="message" placeholder="Let's get down to business..."></textarea>
 
-            <button class="btn" id="submit" type="submit">Submit</button>
+            <p class="req-p center-align col-span-full">Please fill out all required sections*</p>
 
-            <p>Please fill out all required sections</p>
-        </form>
+            <button class="btn col-start-3 col-span-2 m-col-start-10" id="submit" type="submit">Submit</button>
+
     </section>
 
 

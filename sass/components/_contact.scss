@@ -1,0 +1,59 @@
+@use '../abstracts';
+
+#contact label {
+    opacity: 0.5;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+input {
+    field-sizing: content;
+    min-inline-size: 2ch;
+    max-inline-size: 40ch;
+}
+
+input, textarea {
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: abstracts.$primary-color;
+    border: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: white;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color: abstracts.$accent-color;
+    transition: all 0.5s ease;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+#contact button, #contact .req-p {
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    #contact label {
+        padding-top: 50px;
+    }
+
+    input {
+        font-size: 30px;
+    }
+
+    textarea {
+        height: 300px;
+    }
+
+    #contact button, #contact .req-p {
+        margin-top: 50px;
+    }
+}
