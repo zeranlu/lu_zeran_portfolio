@@ -1,6 +1,6 @@
 @use '../abstracts';
 
-.gallery-image {
+.gallery-image, .res-img {
     width: 100%;
     height: 100%;
 }
@@ -9,13 +9,13 @@
     padding-top: 20px;
 }
 
-.gallery-image {
+.gallery-image, .res-img {
     border-radius: 20px;
     box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.3);
     filter: grayscale(50%);
 }
 
-.gallery-image:hover {
+.gallery-image:hover .res-img:hover {
     filter: grayscale(0);
     transition: all 0.5s ease;
 }
