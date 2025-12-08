@@ -84,6 +84,9 @@ section {
     padding-top: 10px;
 }
 
+#reel h2, #skills h2 {
+    padding-bottom: 30px;
+}
 
 @media screen and (min-width: 768px) {
     section {
@@ -116,5 +119,9 @@ section {
 
     #projects h3, #projects .text-con, #projects p, #projects .link-con {
         padding-top: 20px;
+    }
+
+    #reel h2, #skills h2 {
+        padding-bottom: 80px;
     }
 }
