@@ -116,4 +116,78 @@ videoControls.addEventListener("mouseleave", hideControls);
 
 player.addEventListener("mouseenter", showControls);
 player.addEventListener("mouseleave", hideControls);
+
+
+// IMAGE GALLERY --------------------------------------------
+
+const images = [
+    {
+        small:"",
+        large:""
+    },
+    
+    {
+        small:"",
+        large:""
+    },
+
+    {
+        small:"",
+        large:""
+    },
+
+    {
+        small:"",
+        large:""
+    },
+
+    {
+        small:"",
+        large:""
+    }
+];
+
+let imageIndex = 0;
+const galleryImage = document.querySelector(".gallery-image");
+const prevButton = document.querySelector(".previous-button");
+const nextButton = document.querySelector(".next-button");
+
+galleryImage.src = images[imageIndex];
+
+function animateSlide(newIndex, direction) {
+    const offset = direction * 100;
+
+    gsap.to(galleryImage, {
+        xPercent: -offset,
+        opacity: 0,
+        duration: 0.5,
+        onComplete: () => {
+            imageIndex = newIndex;
+            galleryImage.src = images[imageIndex];
+            galleryImage.style.transform = `translateX(${offset}%)`;
+
+            gsap.to(galleryImage, {
+                xPercent: 0,
+                opacity: 1,
+                duration: 0.5
+            });
+        }
+    });
+};
+
+nextButton.addEventListener("click", () => {
+    let newIndex = imageIndex + 1;
+    if (newIndex >= images.length) {
+        newIndex = 0;
+    } animateSlide(newIndex, 1);
+    console.log("previous image");
+});
+
+prevButton.addEventListener("click", () => {
+    let newIndex = imageIndex - 1;
+    if (newIndex < 0) {
+        newIndex = images.length - 1;
+    } animateSlide(newIndex, -1);
+    console.log("next image");
+})
 })();
