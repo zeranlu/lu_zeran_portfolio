@@ -3,6 +3,11 @@
     display: none;
 }
 
+main img {
+    background-color: gray;
+    height: 100px;
+}
+
 body {
     background-color: abstracts.$secondary-color;
 }
@@ -36,4 +41,70 @@ body {
 
 span {
     color: abstracts.$accent-color;
+}
+
+section {
+    padding-bottom: 100px;
+}
+
+#intro {
+    padding-top: 10%;
+    margin-bottom: 20px;
+}
+
+.right-align {
+    text-align: right;
+    justify-content: right;
+}
+
+.link-con {
+    display: flex;
+}
+
+.link-con img {
+    max-width: 50px;
+    height: fit-content;
+}
+
+#projects h4 {
+    padding-top: 50px;
+}
+
+#projects h3, #projects .text-con, #projects p, #projects .link-con {
+    padding-top: 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+    section {
+        padding-bottom: 200px;
+    }
+    
+    .text-con {
+        padding: clamp(15px, 25px, 35px);
+    }
+
+    #hire-me {
+        font-size: 54px;
+    }    
+
+    #about h2 {
+        text-align: right;
+    }
+
+    #about .text-con {
+        text-align: right;
+    }
+
+    #projects h2 {
+        text-align: center;
+    }
+
+    #projects h4 {
+        padding-top: 100px;
+    }
+
+    #projects h3, #projects .text-con, #projects p, #projects .link-con {
+        padding-top: 20px;
+    }
 }
