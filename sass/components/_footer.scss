@@ -1,0 +1,41 @@
+@use '../abstracts';
+
+#footer {
+    background-color: abstracts.$primary-color;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+#footer p {
+    text-align: center;
+}
+
+#footer nav {
+    display: block;
+}
+
+#footer nav ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+#footer nav ul li img {
+    width: 50px;
+}
+
+.footer-icon-gutter {
+    margin-left: 50px;
+}
+
+@media screen and (min-width: 768px) {
+
+    #footer nav ul li img {
+        width: 80px;
+    }
+}
