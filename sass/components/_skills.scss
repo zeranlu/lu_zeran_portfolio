@@ -1,0 +1,37 @@
+@use '../abstracts';
+
+.icon-con {
+    background-color: abstracts.$primary-color;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#icon-row-1, #icon-row-2, #icon-row-3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-icon {
+    width: 15%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.logo-icon:hover {
+    transform: scale(110%);
+    transition: all 0.5s ease;
+    filter: brightness(125%);
+}
+
+@media screen and (min-width: 768px) {
+    .logo-icon {
+        width: 20%;
+    }
+
+    .icon-con {
+        padding: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
