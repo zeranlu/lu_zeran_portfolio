@@ -136,14 +136,36 @@
     <section class="grid-con" id="reel">
         <h2><span>04.</span>Demo Reel</h2>
 
-        <div class="video-player-con">
+        <div class="col-span-full m-col-start-1 m-col-end-13" id="video-player-con">
 
-            <div class="video-con">
+            <video controls preload="metadata" poster="images/video-poster.png">
+                <source src="video/video.mp4" type="video/mp4">
+                <p>You You are using an older browser that does not support HTML5 Video. Please update your browser.</p>
+            </video>
 
+            <div class="video-controls hidden">
+                
+                <button class="video-player-button" id="toggle-button">
+                    <img id="play" src="images/video-icon/play.svg" alt="play button">
+                    <img id="pause" class="hidden" src="images/video-icon/pause.svg" alt="pause button">
+                </button>
 
+                <button class="video-player-button" id="replay-button">
+                    <img src="images/video-icon/restart.svg" alt="replay button">
+                </button>
+
+                <button class="video-player-button" id="mute-button">
+                    <img id="yesVol" src="images/video-icon/volume.svg" alt="mute button">
+                    <img id="noVol" class="hidden" src="images/video-icon/volume-off.svg" alt="mute button">
+                </button>
+
+                <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+
+                <button class="video-player-button" id="fullscreen-button">
+                    <img src="images/video-icon/fullscreen.svg" alt="fullscreen button">
+                </button>
 
             </div>
-
         </div>
 
         <div class="col-span-full">
@@ -205,7 +227,7 @@
                 <p>Thank you for taking the time to visit my portfolio. I would love to engage in future projects with you.</p>
             </div>
 
-            <img class="center-align col-span-full m-col-start-5 m-col-span-4" src="#" alt="picture of greeting graphic">
+            <img class="center-align col-span-full m-col-start-3 m-col-span-8" src="#" alt="picture of greeting graphic">
 
             <div class="text-con col-span-full m-col-start-8 m-col-span-4">
                 <p>To see more of my work, refer to my projects archives here: www.github.com/zeranlu</p>
