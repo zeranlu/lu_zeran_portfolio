@@ -1,0 +1,43 @@
+#intro {
+    position: relative;
+}
+
+#intro img.res-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro h2, #intro button {
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (min-width: 768px) { 
+    #intro h2 {
+        top: 25%;
+    }
+
+    #intro button {
+        top: 75%;
+    }
+
+    #intro img.res-img {
+        position: absolute;
+        width: 100%;
+        top: 25%
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    #intro button {
+        top: 150%;
+    }
+}
