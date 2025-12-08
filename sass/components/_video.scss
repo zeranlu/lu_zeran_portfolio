@@ -1,5 +1,9 @@
 @use '../abstracts';
 
+#reel-heading, .vid-sum-con {
+    padding-top: 30px;
+}
+
 #video-player-con {
     background-color: abstracts.$primary-color;
     padding: 10px;
@@ -79,6 +83,11 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 @media screen and (min-width: 768px) {
+    
+    #reel-heading, .vid-sum-con {
+        padding-top: 50px;
+    }
+
     #video-player-con {
         padding: 30px;
     }
