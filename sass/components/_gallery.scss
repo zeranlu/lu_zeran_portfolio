@@ -9,13 +9,14 @@
     padding-top: 20px;
 }
 
-.gallery-image, .res-img {
+.gallery-image {
     border-radius: 20px;
     box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.3);
     filter: grayscale(50%);
+    cursor: pointer;
 }
 
-.gallery-image:hover .res-img:hover {
+.gallery-image:hover {
     filter: grayscale(0);
     transition: all 0.5s ease;
 }

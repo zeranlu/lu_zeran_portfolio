@@ -1,0 +1,64 @@
+@use '../abstracts';
+
+#projects {
+    position: relative;
+}
+
+#projects h2, #projects .text-con, #projects h4 {
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#projects h3, #projects p {
+    z-index: 2;
+}
+
+.proj-img {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.3);
+    filter: brightness(20%);
+    cursor: pointer;
+    border: 2px solid abstracts.$accent-color;
+}
+
+#proj-1 {
+    top: 18%;
+}
+
+#proj-2 {
+    top: 47%;
+}
+
+#proj-3 {
+    top: 76%;
+}
+
+.proj-img:hover {
+    filter: brightness(100%);
+    transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 768px) {
+
+    #projects {
+        margin-top: 200px;
+    }
+
+    #proj-1 {
+        top: 10%;
+    }
+
+    #proj-2 {
+        top: 40%;
+    }
+
+    #proj-3 {
+        top: 68%;
+    }
+
+}
