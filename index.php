@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zeran Lu's Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" href="css/main.css" rel="stylesheet">
+        <link type="text/css" href="css/grid.css" rel="stylesheet">
+    </head>
+
+<body>
+<header class="grid-con">
+    
+    <button id="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#C59898"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
+    </button>
+
+    <div class="overlay" id="menu">
+
+        <button id="close">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#C59898"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </button>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="images/gen-logo/port-logo.svg" alt="logo"></a></li>
+                <li><a href="#about"><span>01.</span> About</a></li>
+                <li><a href="#projects"><span>02.</span> Projects</a></li>
+                <li><a href="#skills"><span>03.</span> Skills</a></li>
+                <li><a href="#reel"><span>04.</span> Reel</a></li>
+                <li><a href="contact.html"><span>05.</span> Contact</a></li>
+                <li><button class="btn">Resume</button></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- MAIN -->
+
+<main>
+    <h1 class="hidden">Zeran Lu's Portfolio</h1>
+
+<!-- INTRO SECTION -->
+    
+    <section class="grid-con" id="intro">
+        <h2 class="hidden">Introduction</h2>
+
+            <img class="res-img col-span-full m-col-start-7 m-col-span-6" src="images/intro-image/s-intro-image-252X252.png" srcset="images/intro-image/s-intro-image-252X252.png 252w, images/intro-image/l-intro-image-572X572.png 572w" sizes="(max-width: 768px) 100vw, 572px" alt="picture of me">
+        
+        <h2 class="col-span-full m-col-start-1 m-col-span-6">Hi<br>My name is Zeran Lu. Front-end Dev.</h2>
+        
+        <button class="btn col-start-2 col-span-2 m-col-start-1 m-col-span-5" id="hire-me">Hire Me</button>
+    </section>
+
+<!-- ABOUT SECTION -->
+
+    <section class="grid-con" id="about">
+        <h2 class="col-span-full m-col-end-12"><span>01.</span>About Me</h2>
+
+        <img class="res-img col-span-full m-col-start-2 m-col-span-5" src="images/about-image/s-about-image-437X539.png" srcset="images/about-image/s-about-image-437X539.png 437w, images/about-image/l-about-image-571X705.png 571w" sizes="(max-width: 768px) 100vw, 705px" alt="picture of me">
+
+        <div class="text-con col-span-full col-span-3 m-col-start-6 m-col-span-6">
+            <p>I am a front-end developer that is passionate about creating creatively interactive websites that push the boundaries of what's possible. I am a graduate at Fanshawe college under the Interactive Design and Media program (IDP). I have many different personal and school projects on my portfolio that reflect my various hobbies to show off my design and coding capabilities.</p>
+        </div>
+    </section>
+
+<!-- PROJECTS SECTION -->
+
+    <section class="grid-con" id="projects">
+        <h2 class="col-span-full"><span>02.</span>Some Projects I've Built</h2>
+
+        <h3 class="hidden">Highlighted Projects:</h3>
+        
+            <h4 class="col-start-1 col-span-full m-col-start-2 ">Featured Project</h4>            
+            <h3 class="col-start-1 col-span-full m-col-start-2 ">VELOCITY Earbuds</h3>
+
+            <img class="proj-img col-span-full m-col-start-6 m-col-end-12" src="images/proj-images/s-proj-image-539X487-1.png" srcset="images/proj-images/s-proj-image-539X487-1.png 539w, images/proj-images/l-proj-image-690X624-1.png 690w" sizes="(max-width: 768px) 100vw, 690px" alt="picture of the VELOCITY Earbud website" id="proj-1">
+
+            <div class="text-con col-end-4 col-span-full m-col-start-2 m-col-span-5">
+                <p>This project consists is a model promotional website for some custom made 3D earbuds that I researched, designed, modeled, and created a website for. The assets for the website were all also custom created including the logo, promotional images, graphic icons, 3D models, and HTML, CSS and JS code.</p>
+            </div>
+            <p class="col-start-1 col-span-full m-col-start-2">Cinema4d - Redshift | VSCode | Photoshop | Illustrator | GitHub</p>
+            <div class="link-con col-start-1 col-span-1 m-col-start-2 m-col-span-1">
+                <a href="https://github.com/zeranlu/earbuds_promotion"><img src="images/software-logo/github-mark-white.svg" alt=""></a>
+
+                <a href="#"><img src="images/gen-logo/new-link.svg" alt=""></a>
+            </div>
+
+
+            <h4 class="col-end-5 col-span-full m-col-end-12 right-align">Featured Project (Work-in Progress)</h4>            
+            <h3 class="col-end-5 col-span-full m-col-end-12 right-align">Comic Book Store</h3>
+
+            <img class="proj-img col-span-full m-col-start-2 m-col-span-6" src="images/proj-images/s-proj-image-539X487-2.png" srcset="images/proj-images/s-proj-image-539X487-2.png 539w, images/proj-images/l-proj-image-690X624-2.png 690w" sizes="(max-width: 768px) 100vw, 690px" alt="picture of the comic book store website" id="proj-2">
+
+            <div class="text-con col-end-5 col-span-3 m-col-start-7 m-col-end-12 right-align">
+                <p>This project was our introduction to back-end development. I have turned this project into a personal comic book collection gallery. Website acts as the collector's best friend, being able to digitize, preserve, and show-off one's collection.</p>
+            </div>
+            <p class="col-end-5 col-span-full m-col-end-12 right-align">Cinema4d - Redshift | VSCode | Photoshop | Illustrator | GitHub</p>
+            <div class="link-con col-start-4 col-span-1 m-col-end-12 m-col-span-1 right-align">
+                <a href="https://github.com/zeranlu"><img src="images/software-logo/github-mark-white.svg" alt=""></a>
+
+                <a href="#"><img src="images/gen-logo/new-link.svg" alt=""></a>
+            </div>
+
+
+            <h4 class="left-align col-start-1 col-span-full m-col-start-2">Featured Project (Work-in Progress)</h4>            
+            <h3 class="left-align col-span-full m-col-start-2">Seven Makeup Line</h3>
+
+            <img class="proj-img col-span-full m-col-start-6 m-col-end-12" src="images/proj-images/s-proj-image-539X487-3.png" srcset="images/proj-images/s-proj-image-539X487-3.png 539w, images/proj-images/l-proj-image-690X624-3.png 690w" sizes="(max-width: 768px) 100vw, 690px" alt="picture of the Seven makeup website" id="proj-3">
+
+            <div class="left-align text-con col-start-1 col-span-3 m-col-start-2 m-col-span-5">
+                <p>This project was a collection of visual assets created by me and Ben Kettlewell. This website is an advertisement to show off the strong brand identity we created with various visual assets created from Adobe software and Figma.</p>
+            </div>
+            <p class="left-align col-start-1 col-span-full m-col-start-2">Cinema4d - Redshift | VSCode | Photoshop | Illustrator | GitHub</p>
+            <div class="left-align link-con col-start-1 col-span-1 m-col-start-2 m-col-span-1">
+                <a href="https://github.com/zeranlu"><img src="images/software-logo/github-mark-white.svg" alt=""></a>
+
+                <a href="#"><img src="images/gen-logo/new-link.svg" alt=""></a>
+            </div>
+    </section>
+
+<!-- SKILLS SECTION -->
+
+    <section class="grid-con" id="skills">
+        <h2 class="center-align col-span-full"><span>03.</span>Creative Toolkit</h2>
+                <h3 class="hidden">Highlighted Skills:</h3>
+
+        <div class="icon-con col-span-full m-col-start-3" id="icon-row-1">
+
+        </div>
+        <p class="left-align col-start-1 col-span-full m-col-start-3">VSCode | HTML | CSS | JavaScript | MySQL</p>
+        <h4 class="left-align col-start-1 col-span-full m-col-start-3">Coding Languages</h4>
+
+
+        <div class="icon-con col-span-full m-col-start-1 m-col-end-11" id="icon-row-2">
+
+        </div>
+        <p class="right-align col-end-5 col-span-full m-col-end-11">PHP | Gtihub | Figma | Cinema4D | Redshift</p>
+        <h4 class="right-align col-end-5 col-span-full m-col-end-11">Asset Management</h4>
+
+        <div class="icon-con col-span-full m-col-start-3" id="icon-row-3">
+
+        </div>
+        <p class="left-align col-start-1 col-span-full m-col-start-3">Photoshot | Illustrator | AfterEffects</p>
+        <h4 class="left-align col-start-1 col-span-full m-col-start-3">Adobe Software</h4>
+    </section>
+
+<!-- VIDEO SECTION -->
+
+    <section class="grid-con" id="reel">
+        <h2 class="center-align col-span-full"><span>04.</span>Demo Reel</h2>
+
+        <div class="col-span-full m-col-start-1 m-col-end-13" id="video-player-con">
+
+            <video controls preload="metadata" poster="images/video-poster.png">
+                <source src="video/video.mp4" type="video/mp4">
+                <p>You You are using an older browser that does not support HTML5 Video. Please update your browser.</p>
+            </video>
+
+            <div class="video-controls hidden">
+                
+                <button class="video-player-button" id="toggle-button">
+                    <img id="play" src="images/video-icon/play.svg" alt="play button">
+                    <img id="pause" class="hidden" src="images/video-icon/pause.svg" alt="pause button">
+                </button>
+
+                <button class="video-player-button" id="replay-button">
+                    <img src="images/video-icon/restart.svg" alt="replay button">
+                </button>
+
+                <button class="video-player-button" id="mute-button">
+                    <img id="yesVol" src="images/video-icon/volume.svg" alt="mute button">
+                    <img id="noVol" class="hidden" src="images/video-icon/volume-off.svg" alt="mute button">
+                </button>
+
+                <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+
+                <button class="video-player-button" id="fullscreen-button">
+                    <img src="images/video-icon/fullscreen.svg" alt="fullscreen button">
+                </button>
+
+            </div>
+        </div>
+
+        <div class="gal-con-con center-align col-span-full m-col-start-1 m-col-span-6">
+            <h3 id="reel-heading">Video Content Highlights</h3>
+
+            <div class="gallery-con">
+                <img class="gallery-image" src="#" alt="picture of project">
+            </div>
+
+            <div class="button-con">
+                <button class="btn" id="previous-button">
+                    <img src="images/gen-logo/arrow-back.svg" alt="previous image button">
+                </button>
+                
+                <div class="caption-con">
+                    <h4>selected h4</h4>
+                    <h3>selected h3</h3>
+                </div>
+
+                <button class="btn" id="next-button">
+                    <img src="images/gen-logo/arrow-forward.svg" alt="next image button">
+                </button>
+            </div> 
+
+        </div>
+        
+
+        <div class="sum-con-con col-span-full m-col-start-7 m-col-span-6">
+            <div class="vid-sum-con" id="sum-1">
+                <h4>Website</h4>
+                <h3>UFC vs ONE Fight Night</h3>
+                <div class="text-con">
+                    <p>A website about a potential crossover of fighting organizations.</p>
+                </div>
+            </div>
+
+            <div class="vid-sum-con" id="sum-2">
+                <h4>Website</h4>
+                <h3>Interactive Chessboard</h3>
+                <div class="text-con">
+                    <p>An interactive web player to enhance the experience of online chess.</p>
+                </div>
+            </div>
+
+            <div class="vid-sum-con" id="sum-3">
+                <h4>Website</h4>
+                <h3>Horror Movie Selector</h3>
+                <div class="text-con">
+                    <p>Help you and you spooky viewing party pick a horror movie at incredible speed.</p>
+                </div>
+            </div>
+
+            <div class="vid-sum-con" id="sum-4">
+                <h4>3-D Model</h4>
+                <h3>Comic Book Case</h3>
+                <div class="text-con">
+                    <p>A rendered 3D model of a comic book collecting case.</p>
+                </div>
+            </div>
+
+            <div class="vid-sum-con" id="sum-5">
+                <h4>Graphics</h4>
+                <h3>Movie Poster Touchups</h3>
+                <div class="text-con">
+                    <p>Famous horror movie redesigns and touchups in different styles and renditions.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="full-width-grid-con" id="footer">
+    <h2 class="hidden">Footer Section</h2>
+        <nav class="soc-con">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/"><img src="images/social-media-logo/facebook.svg" alt="facebook logo"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"><img src="images/social-media-logo/instagram.svg" alt="instagram logo"></a>
+                </li>
+                <li>
+                    <a href="https://ca.pinterest.com/zeranlu0326/"><img src="images/social-media-logo/pinterest.svg" alt="pinterest logo"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/zeran-lu-702269185/"><img src="images/social-media-logo/linkedin.svg" alt="linkedIn logo"></a>
+                </li>
+                <li>
+                    <img class="footer-icon-gutter" src="images/gen-logo/port-logo.svg" alt="zeran lu logo">
+                </li>
+            </ul>
+        </nav>
+    <p>Copyright © Zeran Lu 2025. All rights reserved.
+        <br>Powered by Brightspace.
+    </p>
+
+</footer>
+
+
+
+    <!-- link to greensock main library -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <!-- link to greensock galleryAnimation -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- link to greensock scrollTrigger -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <!-- ScrollTo plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <!-- Our JS folder last -->
+    <script src="./js/main.js"></script>
+
+
+
+</body>
+</html>
