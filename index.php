@@ -1,28 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- NOT BEST PRACTICE FOR PHP!!!! -->
-<?php
-//  Error reporting, turn off when we launch VERY IMPORTANT TO DO SO
-error_reporting(E_ALL);
-
-ini_set('display_errors', 1);
-
-// Connect to my database
-require_once('includes/connect.php');
-
-// Variables
-$results = mysqli_query($connect, $query);
-?>
-
-
     <head>
         <title>Zeran Lu's Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="text/css" href="css/main.css?v=<?php echo filemtime('css/main.css'); ?>" rel="stylesheet">
-        <link type="text/css" href="css/grid.css?v=<?php echo filemtime('css/grid.css'); ?>" rel="stylesheet">
+        <link type="text/css" href="css/main.css" rel="stylesheet">
+        <link type="text/css" href="css/grid.css" rel="stylesheet">
     </head>
 
 <body>
@@ -40,12 +23,12 @@ $results = mysqli_query($connect, $query);
 
         <nav>
             <ul>
-                <li><a href="index.php"><img src="images/gen-logo/port-logo.svg" alt="logo"></a></li>
+                <li><a href="index.html"><img src="images/gen-logo/port-logo.svg" alt="logo"></a></li>
                 <li><a href="#about"><span>01.</span> About</a></li>
                 <li><a href="#projects"><span>02.</span> Projects</a></li>
                 <li><a href="#skills"><span>03.</span> Skills</a></li>
                 <li><a href="#reel"><span>04.</span> Reel</a></li>
-                <li><a href="contact.php"><span>05.</span> Contact</a></li>
+                <li><a href="contact.html"><span>05.</span> Contact</a></li>
                 <li><button class="btn">Resume</button></li>
             </ul>
         </nav>

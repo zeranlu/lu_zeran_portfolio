@@ -4,8 +4,8 @@
         <title>Portfolio Contact Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="text/css" href="css/main.css?v=<?php echo filemtime('css/main.css'); ?>" rel="stylesheet">
-        <link type="text/css" href="css/grid.css?v=<?php echo filemtime('css/grid.css'); ?>" rel="stylesheet">
+        <link type="text/css" href="css/main.css" rel="stylesheet">
+        <link type="text/css" href="css/grid.css" rel="stylesheet">
     </head>
 
 <body>
@@ -23,12 +23,12 @@
 
         <nav>
             <ul>
-                <li><a href="index.php"><img src="images/gen-logo/port-logo.svg" alt="logo"></a></li>
-                <li><a href="index.php#about"><span>01.</span> About</a></li>
-                <li><a href="index.php#projects"><span>02.</span> Projects</a></li>
-                <li><a href="index.php#skills"><span>03.</span> Skills</a></li>
-                <li><a href="index.php#reel"><span>04.</span> Reel</a></li>
-                <li><a href="#contact"><span>05.</span> Contact</a></li>
+                <li><a href="index.html"><img src="images/gen-logo/port-logo.svg" alt="logo"></a></li>
+                <li><a href="index.html#about"><span>01.</span> About</a></li>
+                <li><a href="index.html#projects"><span>02.</span> Projects</a></li>
+                <li><a href="index.html#skills"><span>03.</span> Skills</a></li>
+                <li><a href="index.html#reel"><span>04.</span> Reel</a></li>
+                <li><a href="contact.html"><span>05.</span> Contact</a></li>
                 <li><button class="btn">Resume</button></li>
             </ul>
         </nav>
