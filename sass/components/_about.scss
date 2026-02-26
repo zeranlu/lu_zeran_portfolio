@@ -1,8 +1,10 @@
+@use '../abstracts' as a;
+
 #about {
     position: relative;
     background-image: url(../../images/bg-pattern-vector.svg);
+    background-color: a.$white;
     background-repeat: repeat;
-    
 }
 
 #about img.res-img {
