@@ -38,6 +38,18 @@
 
     <main>
         <h1>My Projects</h1>
+
+        <?php
+
+        $projects = $pdo->query("SELECT * FROM tbl_case_studies ORDER BY case_study_id DESC");
+
+        while ($project = $projects->fetch(PDO::FETCH_ASSOC)) {
+            echo "<h2>" . $project['project_title'] . "</h2>";
+
+            echo "<p>" . $project['project_desc'] . "</p>";
+        }
+        ?>
+        
     </main>
 </body>
 </html>
