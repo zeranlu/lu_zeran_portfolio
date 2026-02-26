@@ -1,5 +1,4 @@
-(() => {
-
+export function hamburgerMenu() {
 // HAMBURGER MENU ------------------------------------
 
 const menu = document.querySelector("#menu");
@@ -19,6 +18,4 @@ menuLinks.forEach((link) => {
     link.addEventListener("click", toggleMenu);
     console.log("menu link clicked");
 });
-
-
-})();
+}
