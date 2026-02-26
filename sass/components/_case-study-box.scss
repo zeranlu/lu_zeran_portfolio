@@ -1,0 +1,40 @@
+@use '../abstracts' as a;
+
+#case-study-intro-con {
+    display: block;
+
+    h2, p {
+        margin: 1rem;
+    }
+}
+
+#filter-tags-con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.filter-tags {
+    flex: 1;
+
+    button {
+        width: 6rem;
+        height: 4rem;
+        border-radius: 2rem;
+        border: 2px solid a.$accent-color;
+        background-color: transparent;
+        color: a.$accent-color;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    #filter-tags-con {
+        width: 50%;
+        position: relative;
+        margin: auto;
+    }
+}
