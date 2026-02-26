@@ -30,6 +30,19 @@
     }
 }
 
+#case-study-con {
+    margin: 2rem;
+    
+    h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+.case-study-box {
+    border: 2px solid a.$accent-color;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
 
 @media screen and (min-width: 768px) {
     #filter-tags-con {
