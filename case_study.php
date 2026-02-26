@@ -8,8 +8,16 @@
     <title>Case Studies - Zeran Lu Portfolio</title>
     <link type="text/css" href="css/main.css" rel="stylesheet">
     <link type="text/css" href="css/grid.css" rel="stylesheet">
+
+    <!--GreenSock Connections-->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+        
+    <!--JS Modules-->
+    <script type="module" defer src="js/main.js"></script>
 </head>
-<body>
+<body data-page="case-study">
     <header class="grid-con">
     
         <button id="hamburger">
