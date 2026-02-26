@@ -1,13 +1,19 @@
-@mixin borderRad($radius) {
-    border-radius: $radius 20px $radius 20px;
+$transition: all 0.2s ease;
+
+$size-up: scale(110%);
+$size-down: scale(90%);
+
+.mobile-only {
+    display: block;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.desktop-only {
+    display: none;
 
-@mixin transition() {
-    transition: all .5s ease-in-out;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
