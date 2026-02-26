@@ -36,6 +36,8 @@
         </div>
     </header>
 
-    
+    <main>
+        <h1>My Projects</h1>
+    </main>
 </body>
 </html>
