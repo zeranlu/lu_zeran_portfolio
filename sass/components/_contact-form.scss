@@ -4,60 +4,63 @@
     display: block;
 }
 
-// #contact label {
-//     opacity: 0.5;
-//     padding-top: 30px;
-//     padding-bottom: 10px;
-// }
+.contact-field-con {
+    display: flex;
+    flex-direction: column;
+}
 
-// input {
-//     field-sizing: content;
-//     min-inline-size: 2ch;
-//     max-inline-size: 40ch;
-// }
+#contact label {
+    opacity: 0.5;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
 
-// input, textarea {
-//     padding: 20px;
-//     font-size: 20px;
-//     color: a.$white;
-//     background-color: a.$secondary-color;
-//     border: none;
-// }
+input {
+    field-sizing: content;
+    min-inline-size: 2ch;
+    max-inline-size: 40ch;
+}
 
-// input::placeholder, textarea::placeholder {
-//     color: a.$white;
-//     border-bottom: 1px solid a.$white;
-//     font-size: 20px;
-// }
+input, textarea {
+    padding: 20px;
+    font-size: 20px;
+    color: a.$white;
+    background-color: a.$secondary-color;
+    border: none;
+}
 
-// input:focus::placeholder, textarea:focus::placeholder {
-//     color: a.$accent-color;
-//     transition: all 0.5s ease;
-// }
+input::placeholder, textarea::placeholder {
+    color: a.$white;
+    border-bottom: 1px solid a.$white;
+    font-size: 20px;
+}
 
-// textarea {
-//     resize: none;
-//     height: 200px;
-// }
+input:focus::placeholder, textarea:focus::placeholder {
+    color: a.$accent-color;
+    transition: all 0.5s ease;
+}
 
-// #contact button, #contact .req-p {
-//     margin-top: 30px;
-// }
+textarea {
+    resize: none;
+    height: 200px;
+}
 
 @media screen and (min-width: 768px) {
-    // #contact label {
-    //     padding-top: 50px;
-    // }
+    #contact label {
+        padding-top: 50px;
+        font-size: 150%;
+    }
 
-    // input {
-    //     font-size: 30px;
-    // }
+    input {
+        font-size: 30px;
+    }
 
-    // textarea {
-    //     height: 300px;
-    // }
+    textarea {
+        height: 300px;
+    }
 
-    // #contact button, #contact .req-p {
-    //     margin-top: 50px;
-    // }
+    #feedback-con {
+        text-align: center;
+        font-size: 150%;
+    }
 }
