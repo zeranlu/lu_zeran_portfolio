@@ -8,10 +8,6 @@ header {
     box-shadow: a.$boxshadow;
 }
 
-main img {
-    height: 100px;
-}
-
 body {
     background-color: a.$secondary-color;
     background-image: url(../../images/bg-pattern-vector.svg);
@@ -44,87 +40,14 @@ body {
     scale: (90%);
 }
 
-.text-con {
-    background-color: a.$primary-color;
-    padding: clamp(5px, 10px, 15px)
-}
-
 span {
     color: a.$accent-color;
 }
 
-.left-align {
-    text-align: left;
-    justify-content: left;
-}
-
-.center-align {
-    text-align: center;
-    justify-content: center;
-}
-
-.right-align {
-    text-align: right;
-    justify-content: right;
-}
-
-.link-con {
-    display: flex;
-}
-
-.link-con img {
-    max-width: 50px;
-    height: fit-content;
-}
-
-#projects h4 {
-    padding-top: 50px;
-}
-
-#projects h3, #projects .text-con, #projects p, #projects .link-con {
-    padding-top: 10px;
-}
-
-#reel h2, #skills h2 {
-    padding-bottom: 30px;
-}
-
-.res-img {
-    border-radius: 20px;
-    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
-
 @media screen and (min-width: 768px) {
-    section {
-        padding-bottom: 10rem;
-    }
-    
-    .text-con {
-        padding: clamp(15px, 25px, 35px);
-    }
-
-    #hire-me {
-        font-size: 54px;
-    }    
 
     #about h2 {
         text-align: right;
     }
 
-    #projects h2 {
-        text-align: center;
-    }
-
-    #projects h4 {
-        padding-top: 100px;
-    }
-
-    #projects h3, #projects .text-con, #projects p, #projects .link-con {
-        padding-top: 20px;
-    }
-
-    #reel h2, #skills h2 {
-        padding-bottom: 80px;
-    }
 }
