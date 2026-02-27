@@ -1,6 +1,7 @@
 @use '../abstracts' as a;
 
 #contact {
+    display: block;
     background-color: a.$primary-color;
     margin-top: 4rem;
     padding: 4rem 2rem;
