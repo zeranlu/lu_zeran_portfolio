@@ -2,7 +2,54 @@
 
 #about {
     position: relative;
-    
+    background-color: a.$secondary-color;
+    border-radius: a.$borderrad;
+    box-shadow: a.$boxshadow;
+    margin: 1rem;
+    padding: 2rem;
+    display: block;
+}
+
+#about-text-con {
+    a {
+        text-decoration: none;
+        color: a.$accent-color;
+        font-weight: bold;
+        border-bottom: 1px solid a.$accent-color;
+    }
+
+    p {
+        margin: 2rem 0;
+    }
+}
+
+#about-icon-con {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.about-icon-box {
+    flex: 0 0 calc(25% - 1rem);
+    display: flex;
+    flex-direction: column;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-decoration: none;
+        color: a.$accent-color
+    }
+
+    svg {
+        width: 4rem;
+        height: 4rem;
+        flex-shrink: 0;
+        fill: a.$white;
+    }
 }
 
 @media screen and (min-width: 768px) {
