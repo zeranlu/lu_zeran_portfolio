@@ -12,12 +12,19 @@ export function contactForm() {
 
         // console.log(thisForm.elements.lname.value);
 
-        const formData = 
-        "fname=" + thisForm.elements.fname.value + 
-        "&lname=" + thisForm.elements.lname.value + 
-        "&email=" + thisForm.elements.email.value +
-        "&message=" + thisForm.elements.message.value;
+        // const formData = 
+        // "fname=" + thisForm.elements.fname.value + 
+        // "&lname=" + thisForm.elements.lname.value + 
+        // "&email=" + thisForm.elements.email.value +
+        // "&message=" + thisForm.elements.message.value;
         // console.log(formData);
+
+        const formData = new URLSearchParams ({
+            lname: thisForm.elements.lname.value,
+            fname: thisForm.elements.fname.value,
+            email: thisForm.elements.email.value,
+            message: thisForm.elements.message.value
+        })
 
         fetch(url, {
             method: "POST",
@@ -39,9 +46,13 @@ export function contactForm() {
                 })
             } else {
                 const messageElement = document.createElement("p");
-                messageElement = responseText.message;
+                messageElement.textContent = responseText.message;
                 feedBack.appendChild(messageElement);
             }
+            feedBack.scrollIntoView({
+                behavior: 'smooth',
+                block: 'end'
+            })
         })
         .catch(error => {
             console.error("Error during fetch:", error);
