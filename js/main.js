@@ -4,6 +4,8 @@ import { scrollTo } from "./modules/scrollTo.js";
 import { scrollTriggerEffect } from "./modules/scrollTrigger.js";
 import { skillSection } from "./modules/skillSection.js";
 import { videoPlayer } from "./modules/videoPlayer.js";
+import { contactForm } from "./modules/contactForm.js";
+
 
 hamburgerMenu();
 
@@ -22,4 +24,5 @@ if (document.body.dataset.page === "home") {
 
 } else if (document.body.dataset.page === "contact") {
     console.log("I look forward to working with yoU!");
+    contactForm();
 }
