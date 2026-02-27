@@ -48,10 +48,21 @@
         width: 4rem;
         height: 4rem;
         flex-shrink: 0;
-        fill: a.$white;
     }
 }
 
 @media screen and (min-width: 768px) {
+    #about {
+        width: 70%;
+        margin: auto;
+    }
 
+    .about-icon-box {
+        flex: 0 0 calc(20% - 1rem);
+
+        svg {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
 }
