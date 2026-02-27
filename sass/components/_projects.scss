@@ -8,9 +8,9 @@
     background-color: a.$primary-color;
     box-shadow: a.$boxshadow;
     padding: 2rem;
-
-    a {
-        margin: auto;
+    
+    p {
+        margin: 1rem 0;
     }
 }
 
@@ -72,6 +72,53 @@
     transform: a.$size-up;
 }
 
+.link-con {
+    display: flex;
+}
+
+.link-con img {
+    max-width: 30px;
+    height: fit-content;
+}
+
+#projects-button {
+    background-color: a.$primary-color;
+    text-align: right;
+    padding: 2rem;
+}
+
 @media screen and (min-width: 768px) {
 
+    #projects {
+        margin-top: 2rem;
+    }
+
+    #projects-project-con {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .project-box {
+        flex: 1;
+
+        // mimicing longer pictures
+        padding-bottom: 30rem;
+        background-color: a.$primary-color;
+    }
+
+    .project-box-a {
+
+        h3 {
+            top: 10%;
+            color: a.$accent-color;
+        }
+
+        p {
+            top: 50%;
+        }
+    }
+
+    .project-skills-p {
+        font-size: 75%;
+    }
 }
