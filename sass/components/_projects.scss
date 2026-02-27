@@ -1,47 +1,57 @@
-@use '../abstracts';
+@use '../abstracts' as a;
 
 #projects {
     position: relative;
 }
 
-#projects h2, #projects .text-con, #projects h4 {
+#projects-text-con {
+    background-color: a.$primary-color;
+    box-shadow: a.$boxshadow;
+
+    a {
+        margin: auto;
+    }
+}
+
+.project-box {
     position: relative;
-    z-index: 2;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
-#projects h3, #projects p {
-    z-index: 2;
+.project-box-a {
+    text-decoration: none;
+    color: a.$tertiary-color;
+
+    h3 {
+        position: absolute;
+        top: 20%;
+        color: a.$accent-color;
+    }
+
+    p {
+        position: absolute;
+        top: 40%;
+    }
+
+    h3, p {
+        margin: 3rem;
+        z-index: 2;
+    }
 }
 
-.proj-img {
-    position: absolute;
+.project-selection-image {
     width: 100%;
-    height: fit-content;
-    border-radius: 20px;
-    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    display: block;
+    object-fit: cover;
     filter: brightness(20%);
-    cursor: pointer;
-    border: 2px solid abstracts.$accent-color;
+    z-index: 1;
+    transition: a.$transition;
 }
 
-#proj-1 {
-    top: 18%;
-}
-
-#proj-2 {
-    top: 47%;
-}
-
-#proj-3 {
-    top: 76%;
-}
-
-.proj-img:hover {
-    filter: brightness(100%);
-    transition: all 0.5s ease;
-}
+// .proj-img:hover {
+//     filter: brightness(100%);
+//     transition: all 0.5s ease;
+// }
 
 @media screen and (min-width: 768px) {
 
