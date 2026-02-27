@@ -7,6 +7,7 @@
 #projects-text-con {
     background-color: a.$primary-color;
     box-shadow: a.$boxshadow;
+    padding: 2rem;
 
     a {
         margin: auto;
@@ -15,11 +16,14 @@
 
 .project-box {
     position: relative;
+    overflow: hidden;
 }
 
 .project-box-a {
     text-decoration: none;
     color: a.$tertiary-color;
+    opacity: 1; // reference this for JS later
+    transition: a.$transition; 
 
     h3 {
         position: absolute;
@@ -29,13 +33,28 @@
 
     p {
         position: absolute;
-        top: 40%;
+        top: 35%;
     }
 
     h3, p {
         margin: 3rem;
         z-index: 2;
     }
+}
+
+.project-selection-details {
+    background-color: a.$primary-color;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.project-skills-p {
+    width: 75%;
+    margin: auto;
 }
 
 .project-selection-image {
@@ -48,27 +67,11 @@
     transition: a.$transition;
 }
 
-// .proj-img:hover {
-//     filter: brightness(100%);
-//     transition: all 0.5s ease;
-// }
+.project-selection-image:hover {
+    filter: brightness(100%);
+    transform: a.$size-up;
+}
 
 @media screen and (min-width: 768px) {
-
-    #projects {
-        margin-top: 200px;
-    }
-
-    #proj-1 {
-        top: 10%;
-    }
-
-    #proj-2 {
-        top: 40%;
-    }
-
-    #proj-3 {
-        top: 68%;
-    }
 
 }
