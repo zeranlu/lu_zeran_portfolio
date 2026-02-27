@@ -3,6 +3,10 @@ $transition: all 0.2s ease;
 $size-up: scale(110%);
 $size-down: scale(90%);
 
+$borderrad: 2rem;
+
+$boxshadow: 5px 3px 5px rgba(0, 0, 0, 0.3);
+
 .mobile-only {
     display: block;
     @media screen and (min-width: 768px) {

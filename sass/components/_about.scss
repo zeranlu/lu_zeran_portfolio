@@ -2,37 +2,9 @@
 
 #about {
     position: relative;
-    background-image: url(../../images/bg-pattern-vector.svg);
-    background-color: a.$white;
-    background-repeat: repeat;
-}
-
-#about img.res-img {
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-#about h2, #about .text-con {
-    position: relative;
-    z-index: 2;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
 }
 
 @media screen and (min-width: 768px) {
-    #about img.res-img {
-        position: absolute;
-        width: 90%;
-        max-height: fit-content;
-    }
 
-    #about {
-        margin-top: 200px;
-    }
 }
