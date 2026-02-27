@@ -1,4 +1,4 @@
-@use '../abstracts';
+@use '../abstracts' as a;
 
 #contact label {
     opacity: 0.5;
@@ -15,19 +15,19 @@ input {
 input, textarea {
     padding: 20px;
     font-size: 20px;
-    color: white;
-    background-color: abstracts.$primary-color;
+    color: a.$white;
+    background-color: a.$secondary-color;
     border: none;
 }
 
 input::placeholder, textarea::placeholder {
-    color: white;
-    border-bottom: 1px solid white;
+    color: a.$white;
+    border-bottom: 1px solid a.$white;
     font-size: 20px;
 }
 
 input:focus::placeholder, textarea:focus::placeholder {
-    color: abstracts.$accent-color;
+    color: a.$accent-color;
     transition: all 0.5s ease;
 }
 
