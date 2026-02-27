@@ -1,20 +1,32 @@
-@use '../abstracts';
+@use '../abstracts' as a;
 
 #contact {
-    padding-top: 20%;
-    margin-bottom: 20px;
+    background-color: a.$primary-color;
+    margin-top: 4rem;
+    padding: 4rem 2rem;
+    box-shadow: a.$boxshadow;
+
+    p {
+        padding: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: a.$accent-color;
+    }
 }
 
-#contact img.res-img {
-    box-shadow: none;
-}
-
-#contact h2 {
-    margin-bottom: 50px;
+.req-p {
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-    #contact h2 {
-        margin-bottom: 100px;
+    #contact {
+        margin-top: 8rem;
+        padding: 4rem;
+
+        p {
+            padding: 2rem;
+        }
     }
 }
