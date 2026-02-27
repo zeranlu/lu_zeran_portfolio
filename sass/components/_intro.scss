@@ -2,15 +2,20 @@
 
 #intro {
     font-family: 'cherry';
-    
+    margin-top: 1rem;
+
     p {
         font-size: 200%;
+        background-color: a.$secondary-color;
+        padding: 1rem;
     }
 }
 
 #intro-button-con {
     display: flex;
     align-items: center;
+    background-color: a.$secondary-color;
+
 }
 
 .intro-button-box {
@@ -27,7 +32,8 @@
 }
 
 .intro-button-box:nth-child(2) {
-    margin-left: auto;    
+    margin-left: auto; 
+    margin-right: 1rem;
 }
 
 #hero-svg-con {
@@ -43,6 +49,14 @@
 
     #intro-button-con {
         margin-top: 15%; //15% is the counter to the nav bar
+    }
+
+    #intro-button-con {
+        background-color: transparent;
+        
+        svg {
+            fill: a.$primary-color;
+        }
     }
 
     #hero-svg-con {
