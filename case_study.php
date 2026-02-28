@@ -108,75 +108,29 @@
     <div class="grid-con" id="case-study-con">
         <h2 class="col-span-full"><span>02.</span>All Projects</h2>
 
-        <div class="case-study-box col-span-4 m-col-span-6">
+        <!-- <div class="case-study-box col-span-4 m-col-span-6">
             <h3>Case Study Title</h3>
             <p>Case study #1 description</p>
             <picture>
                 <source>
                 <img>
             </picture>
-        </div>
+        </div> -->
 
-        <div class="case-study-box col-span-4 m-col-span-6">
-            <h3>Case Study Title</h3>
-            <p>Case study #2 description</p>
-            <picture>
-                <source>
-                <img>
-            </picture>
-        </div>
+        <?php
 
-        <div class="case-study-box col-span-4 m-col-span-6">
-            <h3>Case Study Title</h3>
-            <p>Case study #3 description</p>
-            <picture>
-                <source>
-                <img>
-            </picture>
-        </div>
+        $projects = $pdo->query("SELECT * FROM tbl_case_studies ORDER BY case_study_id DESC");
+        while ($project = $projects->fetch(PDO::FETCH_ASSOC)) {
+            echo 
+            '<div class="case-study-box col-span-4 m-col-span-6">
+                <h3>' . $project['project_title'] . '</h3>
+                <p>' . $project['project_desc'] . '</p>
+            </div>';
+        } 
 
-        <div class="case-study-box col-span-4 m-col-span-6">
-            <h3>Case Study Title</h3>
-            <p>Case study #4 description</p>
-            <picture>
-                <source>
-                <img>
-            </picture>
-        </div>
-
-        <div class="case-study-box col-span-4 m-col-span-6">
-            <h3>Case Study Title</h3>
-            <p>Case study #5 description</p>
-            <picture>
-                <source>
-                <img>
-            </picture>
-        </div>
-
-        <div class="case-study-box col-span-4 m-col-span-6">
-            <h3>Case Study Title</h3>
-            <p>Case study #6 description</p>
-            <picture>
-                <source>
-                <img>
-            </picture>
-        </div>
+        ?>
 
     </div>
-    
-    
-
-
-    <!-- <?php
-
-    $projects = $pdo->query("SELECT * FROM tbl_case_studies ORDER BY case_study_id DESC");
-
-    while ($project = $projects->fetch(PDO::FETCH_ASSOC)) {
-        echo "<h2>" . $project['project_title'] . "</h2>";
-
-        echo "<p>" . $project['project_desc'] . "</p>";
-    }
-    ?> -->
     
 </main>
 
@@ -260,27 +214,27 @@
             <div class="footer-logo-con col-span-2 m-col-start-2 m-col-span-3">
                 <a href="index.html">
                     <svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540.41 469.44">
-<defs>
-    <style>
-    .cls-1 {
-        fill: #FFF;
-        stroke: #44CFCB;
-        stroke-miterlimit: 10;
-        stroke-width: 6px;
-    }
-    </style>
-</defs>
-<g>
-    <g>
-    <polygon class="cls-1" points="271.53 388.82 271.53 467.71 539.41 313.05 539.41 234.16 355.31 340.45 271.53 388.82"/>
-    <polygon class="cls-1" points="355.31 338.45 355.31 108.02 271.53 156.39 271.53 386.82 271.53 386.82 355.31 338.45"/>
-    </g>
-    <g>
-    <polygon class="cls-1" points="270.53 388.82 186.75 340.45 2.65 234.16 2.65 313.05 270.53 467.71 270.53 388.82 270.53 388.82"/>
-    <polygon class="cls-1" points="270.53 236.27 186.75 187.9 2.65 233.16 86.43 281.53 270.53 236.27"/>
-    <polygon class="cls-1" points="270.53 156.39 186.75 108.02 2.65 1.73 2.65 80.62 270.53 235.27 270.53 156.39 270.53 156.39"/>
-    </g>
-</g>
+                    <defs>
+                        <style>
+                        .cls-1 {
+                            fill: #FFF;
+                            stroke: #44CFCB;
+                            stroke-miterlimit: 10;
+                            stroke-width: 6px;
+                        }
+                        </style>
+                    </defs>
+                    <g>
+                        <g>
+                        <polygon class="cls-1" points="271.53 388.82 271.53 467.71 539.41 313.05 539.41 234.16 355.31 340.45 271.53 388.82"/>
+                        <polygon class="cls-1" points="355.31 338.45 355.31 108.02 271.53 156.39 271.53 386.82 271.53 386.82 355.31 338.45"/>
+                        </g>
+                        <g>
+                        <polygon class="cls-1" points="270.53 388.82 186.75 340.45 2.65 234.16 2.65 313.05 270.53 467.71 270.53 388.82 270.53 388.82"/>
+                        <polygon class="cls-1" points="270.53 236.27 186.75 187.9 2.65 233.16 86.43 281.53 270.53 236.27"/>
+                        <polygon class="cls-1" points="270.53 156.39 186.75 108.02 2.65 1.73 2.65 80.62 270.53 235.27 270.53 156.39 270.53 156.39"/>
+                        </g>
+                    </g>
                     </svg>
                 </a>
         </div>
