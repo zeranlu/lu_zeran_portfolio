@@ -13,11 +13,10 @@ hamburgerMenu();
 if (document.body.dataset.page === "home") {
     console.log("welcome to the homepage of my portfolio!");
 
-    gallery();
-    scrollTo();
-    scrollTriggerEffect();
-    skillSection();
-    videoPlayer();
+    // scrollTo();
+    // scrollTriggerEffect();
+    // skillSection();
+    // videoPlayer();
 
 } else if (document.body.dataset.page === "case-study") {
     console.log("check out some case studies on my projects");
