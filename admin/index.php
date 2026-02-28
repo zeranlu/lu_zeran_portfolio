@@ -24,5 +24,13 @@ session_start();
 </head>
 <body>
 
+<?php
+
+$database = new Database();
+
+if (!$_SESSION['admin_logged_in']) {
+    // this is logic for checking and confirming my log
+}
+
 </body>
 </html>
