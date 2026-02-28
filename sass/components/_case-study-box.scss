@@ -1,53 +1,18 @@
 @use '../abstracts' as a;
 
-#case-study-intro-con {
-    display: block;
-
-    h2, p {
-        margin: 1rem;
-    }
-}
-
-#filter-tags-con {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.filter-tags {
-    flex: 1;
-
-    button {
-        width: 6rem;
-        height: 4rem;
-        border-radius: 2rem;
-        border: 2px solid a.$accent-color;
-        background-color: transparent;
-        color: a.$accent-color;
-        cursor: pointer;
-    }
-}
-
-#case-study-con {
-    margin: 2rem;
-    
-    h2 {
-        margin-bottom: 2rem;
-    }
-}
-
 .case-study-box {
     border: 2px solid a.$accent-color;
     border-radius: 1rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
+
+    padding: 3rem;
 }
 
 @media screen and (min-width: 768px) {
-    #filter-tags-con {
-        width: 50%;
-        position: relative;
-        margin: auto;
+
+    .case-study-box {
+        border: 4px solid a.$accent-color;
+
+        padding: 4rem;
     }
 }

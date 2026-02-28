@@ -1,11 +1,70 @@
 @use '../abstracts' as a;
 
-#case-study-body {
-    margin-top: 6rem;
+#case-study-intro-con {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: a.$primary-color;
+    box-shadow: a.$boxshadow;
+
+    h2, p {
+        margin: 1rem;
+    }
+}
+
+#case-study-filter-con {
+    background-color: a.$secondary-color;
+    margin: 4rem 0;
+    padding: 2rem;
+}
+
+#case-study-con {
+    background-color: a.$primary-color;
+    border-radius: a.$borderrad;
+    padding: 4rem;
+    box-shadow: a.$boxshadow;
+
+    margin: 1rem;
+    
+    h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+#filter-tags-con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.filter-tags {
+    flex: 1;
+
+    button {
+        width: 6rem;
+        height: 4rem;
+        border-radius: 2rem;
+        border: 2px solid a.$accent-color;
+        background-color: transparent;
+        color: a.$accent-color;
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    #case-study-body {
+    #case-study-intro-con {
         margin-top: 10rem;
+        border-radius: a.$borderrad;
     }
-}
+
+    #case-study-con {
+        margin: 3rem;
+    }
+
+    #filter-tags-con {
+        width: 50%;
+        position: relative;
+        margin: auto;
+    }
+}   
