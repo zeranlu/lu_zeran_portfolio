@@ -28,6 +28,8 @@ $database = new Database();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio CMS - Zeran Lu</title>
+
+    <link rel="stylesheet" href="CMSstyle.css">
 </head>
 <body data-page="CMS">
     <h1>The Portfolio Dashboard</h1>
