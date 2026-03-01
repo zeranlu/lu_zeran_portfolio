@@ -1,0 +1,47 @@
+/* $primary-color: #2A4494;
+$secondary-color: #13283E;
+$tertiary-color: #eaf6ff;
+$accent-color: #44CFCB; */
+
+
+[data-page="CMS"] {
+    background-color: #2A4494;
+    color: #eaf6ff;  
+
+    h1, h2, h3, p {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #44CFCB;
+        cursor: pointer;
+        padding: 1rem;
+        background-color: #13283E;
+        border: 1px solid #44CFCB;
+        border-radius: 1rem;
+    }
+
+    div {
+        background-color: #13283E;
+
+        a {
+            padding: 1rem;
+            margin: auto;
+        }
+    }
+
+    .btn {
+        background-color: #13283E;
+        border: 1px solid #44CFCB;
+        padding: 1rem;
+        color: #eaf6ff;
+        border-radius: 1rem;
+        margin: 1rem;
+    }
+
+    label {
+        margin: 2rem;
+    }
+}

@@ -44,6 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adding a New Project</title>
+
+    <link rel="stylesheet" href="CMSstyle.css">
 </head>
 <body data-page="CMS">
     <h1>Add a New Project to Your Case Studies!</h1>
