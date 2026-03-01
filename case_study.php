@@ -1,5 +1,3 @@
-<?php require_once 'includes/connect.php'; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,27 +106,23 @@
     <div class="grid-con" id="case-study-con">
         <h2 class="col-span-full"><span>02.</span>All Projects</h2>
 
-        <!-- <div class="case-study-box col-span-4 m-col-span-6">
-            <h3>Case Study Title</h3>
-            <p>Case study #1 description</p>
-            <picture>
-                <source>
-                <img>
-            </picture>
-        </div> -->
 
-        <?php
+        <?php require_once 'includes/classes/Database.php';
+        
+        use ZeranPortfolio\Database;
 
-        $projects = $pdo->query("SELECT * FROM tbl_case_studies ORDER BY case_study_id DESC");
-        while ($project = $projects->fetch(PDO::FETCH_ASSOC)) {
-            echo 
-            '<div class="case-study-box col-span-4 m-col-span-6">
-                <h3>' . $project['project_title'] . '</h3>
-                <p>' . $project['project_desc'] . '</p>
+        $database = new Database();
+        $projects = $database->query("SELECT * FROM tbl_case_studies ORDER BY case_study_id DESC");
+
+        foreach ($projects as $project) {
+            echo '<div class="case-study-box col-span-4 m-col-span-6">
+                <h3>' . htmlspecialchars($project['project_title']) . '</h3>
+                <p>' . htmlspecialchars($project['project_desc']) . '</p>
             </div>';
-        } 
+        }
 
         ?>
+
 
     </div>
     
