@@ -29,7 +29,7 @@ $database = new Database();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio CMS - Zeran Lu</title>
 </head>
-<body>
+<body data-page="CMS">
     <h1>The Portfolio Dashboard</h1>
     
     <p>Welcome,  <?php echo $_SESSION['admin_user']['username']; ?>!
