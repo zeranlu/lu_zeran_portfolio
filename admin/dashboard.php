@@ -50,6 +50,7 @@ $database = new Database();
             echo "<h3>" . $project['project_title'] . "</h3>";
             echo "<p>" . $project['project_desc'] . "</p>";
             echo "<a href='edit.php?id=" . $project['case_study_id'] . "'>Edit this project</a>";
+            echo "<a href='delete.php?id=" . $project['case_study_id'] . "'>Delete this project</a>";
             echo "</div>";
         } 
     } else {
