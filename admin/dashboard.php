@@ -49,13 +49,13 @@ $database = new Database();
             echo "<div style='border: 1px solid black; margin: 1rem; padding: 1rem;'>";
             echo "<h3>" . $project['project_title'] . "</h3>";
             echo "<p>" . $project['project_desc'] . "</p>";
+            echo "<a href='edit.php?id=" . $project['case_study_id'] . "'>Edit this project</a>";
             echo "</div>";
         } 
     } else {
             echo "<p>Empty projects section. <a href='add.php'>Please add some more here</a></p>";
         }
     ?>
-    
     
 </body>
 </html>
