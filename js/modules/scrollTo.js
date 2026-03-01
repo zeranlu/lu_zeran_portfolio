@@ -1,6 +1,6 @@
 export function scrollTo() {
 // SCROLL TO
-gsap.registerPlugin(ScrollTriggerPlugin, ScrollToPlugin);
+gsap.registerPlugin(ScrollToPlugin);
 
 const navLinks = document.querySelectorAll("#menu nav ul li a");
     
