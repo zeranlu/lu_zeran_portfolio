@@ -2,7 +2,7 @@ export function scrollTo() {
 // SCROLL TO
 gsap.registerPlugin(ScrollToPlugin);
 
-const navLinks = document.querySelectorAll("#menu nav ul li a");
+const navLinks = document.querySelectorAll("#skip-button, #menu nav ul li a");
     
 navLinks.forEach((navLink) => {
     navLink.addEventListener("click", scrollLink);
