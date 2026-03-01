@@ -1,9 +1,6 @@
-import { gallery } from "./modules/gallery.js";
 import { hamburgerMenu } from "./modules/hamburgerMenu.js";
 import { scrollTo } from "./modules/scrollTo.js";
 import { scrollTriggerEffect } from "./modules/scrollTrigger.js";
-import { skillSection } from "./modules/skillSection.js";
-import { videoPlayer } from "./modules/videoPlayer.js";
 import { contactForm } from "./modules/contactForm.js";
 
 
