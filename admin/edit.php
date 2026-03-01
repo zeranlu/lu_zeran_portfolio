@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editing a Case Study</title>
 </head>
-<body>
+<body data-page="CMS">
     <h1>Case Study Editor</h1>
     <p><a href='dashboard.php'>Dashboard</a></p>
 
