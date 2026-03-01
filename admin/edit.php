@@ -50,3 +50,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing a Case Study</title>
+</head>
+<body>
+    <h1>Case Study Editor</h1>
+    <p><a href='dashboard.php'>Dashboard</a></p>
+
+    <h2>Editing Current Project: <?php echo htmlspecialchars($project['project_title']); ?></h2>
+
+    <form method="POST">
+        <div>
+            <label>
+                Updated Project Title: 
+            </label>
+            <input type="text" name="project_title" value="<?php echo htmlspecialchars($title); ?>" required>
+        </div>
+
+        <div>
+            <label>
+                Updated Project Description: 
+            </label>
+            <textarea name="project_desc" required><?php echo htmlspecialchars($desc); ?></textarea>
+        </div>
+
+        <button class="btn" type="submit">Update the Project</button>
+    </form>
+</body>
+</html>
