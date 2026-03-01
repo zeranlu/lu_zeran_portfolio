@@ -5,15 +5,13 @@ import { contactForm } from "./modules/contactForm.js";
 
 
 hamburgerMenu();
-
+scrollTo();
 
 if (document.body.dataset.page === "home") {
     console.log("welcome to the homepage of my portfolio!");
 
-    // scrollTo();
+
     // scrollTriggerEffect();
-    // skillSection();
-    // videoPlayer();
 
 } else if (document.body.dataset.page === "case-study") {
     console.log("check out some case studies on my projects");
