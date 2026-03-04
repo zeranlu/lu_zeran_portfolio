@@ -1,3 +1,16 @@
+<?php 
+
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
+        require_once 'includes/classes/Database.php';
+
+        use ZeranPortfolio\Database;
+
+        $database = new Database();
+        $projects = $database->query("SELECT * FROM tbl_case_studies ORDER BY case_study_id DESC");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -107,12 +120,7 @@
         <h2 class="col-span-full"><span>02.</span>All Projects</h2>
 
 
-        <?php require_once 'includes/classes/Database.php';
-        
-        use ZeranPortfolio\Database;
-
-        $database = new Database();
-        $projects = $database->query("SELECT * FROM tbl_case_studies ORDER BY case_study_id DESC");
+        <?php
 
         foreach ($projects as $project) {
             echo '<div class="case-study-box col-span-4 m-col-span-6">
