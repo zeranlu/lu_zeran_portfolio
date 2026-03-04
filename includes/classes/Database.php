@@ -32,10 +32,13 @@ class Database
 
     public function getConfig() {
         return [
-            'username' => 'root',
-            'password' => '',
+            // 'username' => 'root',
+            'username' => 'zeran195_zeranlu',
+            // 'password' => '',
+            'password' => 'databasepass',
             'host' => 'localhost',
-            'database' => 'db_portfolio_0225',
+            // 'database' => 'db_portfolio_0225',
+            'database' => 'zeran195_db_portfolio_0225',
             'port' => '3306'
         ];
     }
