@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 03, 2026 at 12:06 AM
+-- Generation Time: Apr 03, 2026 at 12:05 PM
 -- Server version: 10.6.24-MariaDB-cll-lve
 -- PHP Version: 8.3.30
 
@@ -56,8 +56,9 @@ CREATE TABLE `tbl_case_studies` (
   `proj_image_link_3` varchar(255) NOT NULL,
   `project_github_link` varchar(255) NOT NULL,
   `proj_live_link` varchar(255) NOT NULL,
+  `proj_reference_explanation` varchar(1000) NOT NULL,
   `proj_reference_link` varchar(255) NOT NULL,
-  `proj_intro` text NOT NULL,
+  `proj_problem` text NOT NULL,
   `proj_solution` text NOT NULL,
   `proj_result` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
