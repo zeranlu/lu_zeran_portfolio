@@ -134,7 +134,7 @@
             
             '<div class="case-study-box col-span-4 m-col-span-6">
 
-                <a class="case-study-anchor">
+                <a class="case-study-anchor" href="case_study_detail.php?case_study_id=' . htmlspecialchars($project['case_study_id']) . '">
                     
                     <img src="' . $image . '" alt="thumbnail image of case study">
 
