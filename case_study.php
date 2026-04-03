@@ -89,7 +89,7 @@
         
     </div>
 
-    <div id="case-study-filter-con">
+    <!-- <div id="case-study-filter-con">
         
         <div id="filter-tags-con">
 
@@ -114,7 +114,7 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
 
     <div class="grid-con" id="case-study-con">
         <h2 class="col-span-full"><span>02.</span>All Projects</h2>
@@ -123,9 +123,22 @@
         <?php
 
         foreach ($projects as $project) {
-            echo '<div class="case-study-box col-span-4 m-col-span-6">
-                <h3>' . htmlspecialchars($project['project_title']) . '</h3>
-                <p>' . htmlspecialchars($project['project_desc']) . '</p>
+            echo 
+            
+            '<div class="case-study-box col-span-4 m-col-span-6">
+
+                <a class="case-study-anchor">
+                    
+                    <img src="' . htmlspecialchars($project['proj_image_link_1']) . '" alt="thumbnail image of case study">
+
+
+                    <div class="case-study-textbox">
+                        <h3>' . htmlspecialchars($project['project_title']) . '</h3>
+                        <p>' . htmlspecialchars($project['project_desc']) . '</p>
+                    </div>
+
+                </a>
+                
             </div>';
         }
 
