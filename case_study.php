@@ -123,13 +123,20 @@
         <?php
 
         foreach ($projects as $project) {
+
+            if (!empty($project['proj_image_link_1'])) {
+                $image = htmlspecialchars($project['proj_image_link_1']);
+            } else {
+                $image = '/images/placeholder.jpg';
+            }
+
             echo 
             
             '<div class="case-study-box col-span-4 m-col-span-6">
 
                 <a class="case-study-anchor">
                     
-                    <img src="' . htmlspecialchars($project['proj_image_link_1']) . '" alt="thumbnail image of case study">
+                    <img src="' . $image . '" alt="thumbnail image of case study">
 
 
                     <div class="case-study-textbox">
