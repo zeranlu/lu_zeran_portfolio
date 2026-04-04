@@ -1,0 +1,41 @@
+@use '../abstracts' as a;
+
+.case-study-detail-con {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: a.$primary-color;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.3);
+
+    h2 {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    a {
+        color: a.$white;
+        text-decoration: none;
+    }
+
+    img {
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        overflow: hidden;
+        margin: 1rem;
+    }
+
+    p {
+        margin: 1rem;
+    }
+}
+
+.case-study-separator {
+    margin: 2rem;
+    background-color: a.$white;
+    border-radius: 1rem;
+    width: 80%;
+    height: 1px;
+}
+
+.case-study-intro-box, .case-study-results, .case-study-problem, .case-study-solution {
+    margin: 2rem 0;
+}
