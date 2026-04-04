@@ -91,7 +91,7 @@ $project = $database->query(
         
         <h2 class="col-span-full">Welcome to my Case Study!</h2>
 
-        <div class="case-study-intro-box  col-span-full m-col-start-3 m-col-end-10">
+        <div class="case-study-intro-box  col-span-full m-col-start-3 m-col-end-11">
             <h2>Case Study: <?= htmlspecialchars($project['project_title']) ?></h2>
             <p><?= htmlspecialchars($project['project_desc']) ?></p>
 
@@ -108,7 +108,7 @@ $project = $database->query(
             <p><?= htmlspecialchars($project['proj_reference_explanation']) ?></p>
         </div>
         
-        <div class="case-study-results  col-span-full m-col-start-3 m-col-end-10">
+        <div class="case-study-results  col-span-full m-col-start-3 m-col-end-11">
             <picture class="case-study-img-results">
                 <?php if ($project['proj_image_link_1']): ?>
                 
@@ -119,7 +119,7 @@ $project = $database->query(
             <p><?= htmlspecialchars($project['proj_result']) ?></p>
         </div>
         
-        <div class="case-study-problem  col-span-full m-col-start-3 m-col-end-10">
+        <div class="case-study-problem  col-span-full m-col-start-3 m-col-end-11">
             <picture class="case-study-img-problem">
                 <?php if ($project['proj_image_link_2']): ?>
                 
@@ -130,7 +130,7 @@ $project = $database->query(
             <p><?= htmlspecialchars($project['proj_problem']) ?></p>
         </div>
 
-        <div class="case-study-solution  col-span-full m-col-start-3 m-col-end-10">
+        <div class="case-study-solution  col-span-full m-col-start-3 m-col-end-11">
             <picture class="case-study-img-solution">
                 <?php if ($project['proj_image_link_3']): ?>
                 
