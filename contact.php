@@ -55,6 +55,18 @@
 
         $qpartner = mysqli_query($connection, $querystring);
         
+        if ($qpartner) {
+            $to = "zeranlu0326@gmail.com";
+            $subject = "Portfolio Contact Form: New Message!";
+            $body = "Name: $fullname\n";
+            $body .= "Email: $email\n";
+            $body .= "Message: \n$message\n";
+
+            $headers = "From: $email" . "\r\n" . "Reply-To: $email" . "\r\n" . "X-Mailer: PHP/" . phpversion();
+
+            mail($to, $subject, $body, $headers);
+        }
+
         echo json_encode(array("message" => "Form submitted. Thank you for your interest!"));
     }
 ?>
